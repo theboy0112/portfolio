@@ -1,5 +1,5 @@
 import React from "react";
-import "./FlipCard.css";
+import "./flipcard.css";
 import { useNavigate } from "react-router-dom";
 
 const FlipCard = () => {
