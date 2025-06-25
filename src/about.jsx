@@ -69,7 +69,7 @@ const App = () => {
           <h1 className="abt-h1">Things I Like</h1>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          
           <button style={{ backgroundColor: "transparent" }}>
             <img src={eat}></img>
           </button>
