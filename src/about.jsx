@@ -55,13 +55,13 @@ const App = () => {
             <img src={ig}></img>
           </button>
           <h2 style={{ backgroundColor: "black" }} className="abt-h1">
-            ---------------------------------------------------------------------------------------
+            ----------------------------------------------------------------------
           </h2>
           <h2 style={{ backgroundColor: "white" }} className="abt-h1">
             Things I Like
           </h2>
           <h2 style={{ backgroundColor: "black" }} className="abt-h1">
-            ---------------------------------------------------------------------------------------
+            ----------------------------------------------------------------------
           </h2>
           <h2 style={{ backgroundColor: "white" }} className="abt-h1">
             Things I Like
