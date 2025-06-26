@@ -13,7 +13,6 @@
 .bg {
   border-image: fill 0 linear-gradient(#0001, #000);
 }
-
 body {
   margin: 0;
   display: flex;
@@ -21,12 +20,11 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
-
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  color: #000000;
 }
-
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -45,7 +43,6 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-
 @media (prefers-color-scheme: light) {
   :root {
     color: #6186a7;
@@ -58,25 +55,20 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
-
 .welcome-about,
 .li-center,
 .ad-h {
   text-align: center;
 }
-
 .about-me {
   text-decoration: solid;
 }
-
 .h2 {
   text-align: justify;
 }
-
 .center-profile {
   text-align: center;
 }
-
 .wew {
   display: flex;
   justify-content: space-between;
@@ -91,7 +83,6 @@ button:focus-visible {
   font-family: "Arial", sans-serif;
   position: relative;
 }
-
 .app-container > div:first-child button {
   font-size: 24px;
   font-weight: bold;
@@ -106,7 +97,6 @@ button:focus-visible {
   background-color: rgba(97, 1, 1, 0.1) !important;
   transform: scale(1.05);
 }
-
 .container-about {
   display: flex;
   justify-content: space-between;
@@ -117,7 +107,6 @@ button:focus-visible {
   flex-wrap: wrap;
   animation: fadeInUp 0.6s ease-out;
 }
-
 .left-column-about {
   flex: 1;
   min-width: 300px;
@@ -134,7 +123,6 @@ button:focus-visible {
   font-weight: bold;
   text-align: center;
 }
-
 .left-column-about h2 {
   margin: 15px 0;
   padding: 8px;
@@ -143,7 +131,6 @@ button:focus-visible {
   text-align: center;
   font-weight: normal;
 }
-
 .left-column-about button {
   border: none !important;
   margin: 0 8px;
@@ -165,7 +152,6 @@ button:focus-visible {
 .left-column-about button:hover img {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
-
 .right-column-about {
   flex: 2;
   display: grid;
@@ -174,25 +160,7 @@ button:focus-visible {
   min-width: 400px;
 }
 .card {
-  filter: grayscale(100%);
-}
-* {
-  box-sizing: border-box;
-}
-.gallery {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.card:hover {
-  filter: grayscale(0%);
-}
-
-.card {
   background: rgba(219, 209, 209, 0.95);
-
   border-radius: 15px;
   padding: 25px;
   text-align: center;
@@ -206,8 +174,10 @@ button:focus-visible {
   font-weight: 600;
   margin-top: 10px;
   animation: fadeInUp 0.6s ease-out;
+  filter: grayscale(100%);
 }
 .card:hover {
+  filter: grayscale(0%);
   transform: translateY(-10px) scale(1.02);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
   background: rgba(255, 255, 255, 1);
@@ -218,7 +188,6 @@ button:focus-visible {
 .card:nth-child(odd) {
   animation-delay: 0.2s;
 }
-
 .card-image {
   width: 80px;
   height: 80px;
@@ -230,7 +199,6 @@ button:focus-visible {
 .card:hover .card-image {
   transform: scale(1.1);
 }
-
 .container {
   width: 400px;
   height: 550px;
@@ -242,9 +210,6 @@ button:focus-visible {
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-.btm-btn {
-}
-
 .left-column {
   flex: 15;
   background: #020100;
@@ -257,7 +222,6 @@ button:focus-visible {
   flex: 40;
   padding: 2rem;
 }
-
 .profile-pic {
   position: absolute;
   top: 5%;
@@ -268,15 +232,31 @@ button:focus-visible {
   object-fit: cover;
   margin-bottom: 1rem;
 }
-
 .profile-pic:hover {
   filter: grayscale(0%);
 }
-
 .grid-section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
+}
+.gallery {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+* {
+  box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+  .container-about {
+    padding: 0 20px;
+  }
+  .card {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -308,9 +288,22 @@ button:focus-visible {
     width: 50px;
     height: 50px;
   }
-}
-h1 {
-  color: #000000;
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: 0;
+    margin: 0 auto 1rem auto;
+    display: block;
+  }
+  .grid-section {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .left-column,
+  .right-column {
+    padding: 1rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -323,6 +316,7 @@ h1 {
   }
   .card {
     padding: 15px;
+    font-size: 14px;
   }
   .card-image {
     width: 50px;
@@ -331,6 +325,24 @@ h1 {
   .left-column-about button img {
     width: 45px;
     height: 45px;
+  }
+  .abt-h1,
+  h1 {
+    font-size: 20px;
+  }
+  .container {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .gallery {
+    position: relative;
+    height: auto;
+  }
+  .app-container > div:first-child button {
+    font-size: 18px;
+    padding: 8px 16px;
   }
 }
 
