@@ -71,13 +71,7 @@ const App = () => {
             <img src={fb}></img>
           </button>
           <button style={{ backgroundColor: "transparent" }}>
-            <img src={tg}></img>
-          </button>
-          <button style={{ backgroundColor: "transparent" }}>
             <img src={ig}></img>
-          </button>
-          <button style={{ backgroundColor: "transparent" }}>
-            <img src={nf}></img>
           </button>
           <button style={{ backgroundColor: "transparent" }}>
             <img src={x}></img>

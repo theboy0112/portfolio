@@ -179,12 +179,6 @@ button:focus-visible {
 * {
   box-sizing: border-box;
 }
-body {
-  background: #000;
-  min-height: 100vh;
-  padding: 0;
-  margin: 0;
-}
 .gallery {
   position: absolute;
   width: 100%;
@@ -248,11 +242,8 @@ body {
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-.btm-btn{
- 
+.btm-btn {
 }
-
-
 
 .left-column {
   flex: 15;
