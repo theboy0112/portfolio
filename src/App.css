@@ -1,4 +1,4 @@
-/* === Global Root Styles === */
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -6,14 +6,14 @@
   text-align: center;
 }
 
-/* === About Section === */
+
 .about-me {
   color: steelblue;
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
-/* === Responsive Profile Image === */
+
 .profile {
   display: block;
   margin: 0 auto;
@@ -39,7 +39,7 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-/* === Optional Spin Animation === */
+
 @media (prefers-reduced-motion: no-preference) {
   .logo.react {
     animation: logo-spin infinite 20s linear;
@@ -55,7 +55,7 @@
   }
 }
 
-/* === Card Styling === */
+
 .card {
   padding: 2em;
   margin: 1em auto;
