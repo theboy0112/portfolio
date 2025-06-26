@@ -1,4 +1,3 @@
-
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -6,13 +5,11 @@
   text-align: center;
 }
 
-
 .about-me {
   color: steelblue;
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
-
 
 .profile {
   display: block;
@@ -23,7 +20,6 @@
   border-radius: 12px;
 }
 
-/* === Logo Styling === */
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -32,13 +28,12 @@
 }
 
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #8c8eb9aa);
 }
 
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
-
 
 @media (prefers-reduced-motion: no-preference) {
   .logo.react {
@@ -55,7 +50,6 @@
   }
 }
 
-
 .card {
   padding: 2em;
   margin: 1em auto;
@@ -66,14 +60,11 @@
   text-align: left;
 }
 
-/* === Read the Docs Text === */
 .read-the-docs {
   color: #888;
   font-size: 0.9rem;
   margin-top: 1rem;
 }
-
-/* === Responsive Media Queries === */
 
 /* Tablets */
 @media (max-width: 768px) {
@@ -95,7 +86,6 @@
   }
 }
 
-/* Mobile */
 @media (max-width: 480px) {
   .about-me {
     font-size: 1.1rem;

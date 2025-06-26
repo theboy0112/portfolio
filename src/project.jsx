@@ -1,27 +1,29 @@
-import React from 'react'
-import './index.css'
-import { useNavigate } from 'react-router-dom'
+import React from "react";
+import "./index.css";
+import { useNavigate } from "react-router-dom";
 function project() {
-  const navigate =useNavigate();
+  const navigate = useNavigate();
   return (
-    <div class="main-container">
-      <div> <button
-              onClick={() => navigate(`/#home`)}
-              style={{
-                position: "absolute",
-                top: "0%",
-                left: "0%",
-                backgroundColor: "transparent",
-                border: "none",
-                color: "inherit",
-                cursor: "pointer",
-              }}
-            >
-              Portfolio
-            </button></div>
-  <div class="container">Container 1</div>
-</div>
-  )
+    <div class="app-container">
+      <div>
+        {" "}
+        <button
+          onClick={() => navigate(`/#home`)}
+          style={{
+            position: "absolute",
+            top: "0%",
+            left: "0%",
+            backgroundColor: "transparent",
+            border: "none",
+            color: "inherit",
+            cursor: "pointer",
+          }}
+        >
+          Portfolio
+        </button>
+      </div>
+    </div>
+  );
 }
 
-export default project
+export default project;

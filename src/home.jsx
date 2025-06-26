@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div>
-      <div
+      <div className="bg"
         style={{
           backgroundImage: `url(${bg})`,
           backgroundSize: "cover",

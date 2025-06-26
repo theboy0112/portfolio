@@ -7,6 +7,7 @@ import About from "./about.jsx";
 import Contact from "./contact.jsx";
 import Project from './project.jsx'
 import Profile from './profile.jsx'
+import 'animate.css';
 
 function App() {
   return (

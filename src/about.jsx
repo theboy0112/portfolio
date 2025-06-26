@@ -10,6 +10,20 @@ import x from "./assets/x.png";
 import eat from "./assets/eat.png";
 import nt from "./assets/nt.png";
 import laptop from "./assets/laptop.png";
+import as from "./assets/as.png";
+import javaaa from "./assets/javaaa.png";
+import mysqll from "./assets/mysqll.png";
+import bs from "./assets/bs.png";
+import node from "./assets/node.png";
+import react from "./assets/react.png";
+import nest from "./assets/nest.png";
+import php from "./assets/php.png";
+import tailwind from "./assets/tailwind.png";
+import express from "./assets/express.png";
+import tg from "./assets/tg.png";
+import loop from "./assets/loop.png";
+import zzz from "./assets/zzz.png";
+<link rel="stylesheet" href="animate.css"/>
 
 const App = () => {
   const navigate = useNavigate();
@@ -35,56 +49,82 @@ const App = () => {
       <div className="container-about">
         <div className="left-column-about">
           <div>
-            <h1 className="abt-h1">My Social</h1>
-          </div>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          
-          <button style={{ backgroundColor: "transparent" }}>
-            <img src={nf}></img>
+             <h1> printf("Eat Sleep Code Repeat")</h1>
+          <button className="animate__animated animate__bounce animate__infinite" style={{ backgroundColor: "transparent" }}>
+            <img src={eat}></img>
           </button>
-          <button style={{ backgroundColor: "transparent" }}>
+          <button className="animate__animated animate__bounce animate__infinite" style={{ backgroundColor: "transparent" }}>
+            <img src={zzz}></img>
+          </button>
+          <button className="animate__animated animate__bounce animate__infinite"style={{ backgroundColor: "transparent" }}>
+            <img src={laptop}></img>
+          </button>
+            <h1>Social Media Accounts</h1>
+          </div>
+
+          <button
+            style={{ backgroundColor: "transparent" }}
+            onClick={() =>
+              window.open("https://www.facebook.com/yourprofile", "_blank")
+            }
+          >
             <img src={fb}></img>
           </button>
           <button style={{ backgroundColor: "transparent" }}>
-            <img src={x}></img>
+            <img src={tg}></img>
           </button>
           <button style={{ backgroundColor: "transparent" }}>
             <img src={ig}></img>
           </button>
-          <h2 style={{ backgroundColor: "black" }} className="abt-h1">
-            ----------------------------------------------------------------------
-          </h2>
-          <h2 style={{ backgroundColor: "white" }} className="abt-h1">
-            Things I Like
-          </h2>
-          <h2 style={{ backgroundColor: "black" }} className="abt-h1">
-            ----------------------------------------------------------------------
-          </h2>
-          <h2 style={{ backgroundColor: "white" }} className="abt-h1">
-            Things I Like
-          </h2>
-          <h1 className="abt-h1">Things I Like</h1>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          
           <button style={{ backgroundColor: "transparent" }}>
-            <img src={eat}></img>
+            <img src={nf}></img>
           </button>
           <button style={{ backgroundColor: "transparent" }}>
-            <img src={yt}></img>
+            <img src={x}></img>
           </button>
-          <button style={{ backgroundColor: "transparent" }}>
-            <img src={laptop}></img>
-          </button>
-          <button style={{ backgroundColor: "transparent" }}>
-            <img src={nt}></img>
-          </button>
+
+         
         </div>
 
-        <div className="right-column-about"></div>
+        <div className="right-column-about">
+          
+          <div className="card">
+            <img src={as} alt="Luffy" className="card-image" />
+            Android Studio
+          </div>
+          <div className="card">
+            <img src={mysqll} alt="Luffy" className="card-image" />
+            Mysql
+          </div>
+          <div className="card">
+            <img src={javaaa} alt="Luffy" className="card-image" />
+            Java
+          </div>
+          <div className="card">
+            <img src={node} alt="Luffy" className="card-image" />
+            Node.js
+          </div>
+          <div className="card">
+            <img src={react} alt="Luffy" className="card-image" />
+            React
+          </div>
+          <div className="card">
+            <img src={nest} alt="Luffy" className="card-image" />
+            NestJS
+          </div>
+          <div className="card">
+            <img src={php} alt="Luffy" className="card-image" />
+            Php
+          </div>
+          <div className="card">
+            <img src={express} alt="Luffy" className="card-image" />
+            Express
+          </div>
+          <div className="card">
+            <img src={tailwind} alt="Luffy" className="card-image" />
+            Tailwind
+          </div>
+        </div>
       </div>
     </div>
   );
