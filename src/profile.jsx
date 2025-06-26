@@ -4,6 +4,7 @@ import luffy from "./assets/luffy.jpg";
 import gh from "./assets/gh.png";
 import dc from "./assets/dc.png";
 
+
 function Profile() {
   const navigate = useNavigate();
 

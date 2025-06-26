@@ -23,14 +23,14 @@ import express from "./assets/express.png";
 import tg from "./assets/tg.png";
 import loop from "./assets/loop.png";
 import zzz from "./assets/zzz.png";
-<link rel="stylesheet" href="animate.css"/>
+<link rel="stylesheet" href="animate.css" />;
 
 const App = () => {
   const navigate = useNavigate();
   return (
     <div className="app-container">
       <div>
-        {" "}
+        
         <button
           onClick={() => navigate(`/#home`)}
           style={{
@@ -49,17 +49,26 @@ const App = () => {
       <div className="container-about">
         <div className="left-column-about">
           <div>
-             <h1> printf("Eat Sleep Code Repeat")</h1>
-          <button className="animate__animated animate__bounce animate__infinite" style={{ backgroundColor: "transparent" }}>
-            <img src={eat}></img>
-          </button>
-          <button className="animate__animated animate__bounce animate__infinite" style={{ backgroundColor: "transparent" }}>
-            <img src={zzz}></img>
-          </button>
-          <button className="animate__animated animate__bounce animate__infinite"style={{ backgroundColor: "transparent" }}>
-            <img src={laptop}></img>
-          </button>
-            <h1>Social Media Accounts</h1>
+            <h1> printf("Eat Sleep Code Repeat")</h1>
+            <button
+              className="animate__animated animate__bounce animate__infinite"
+              style={{ backgroundColor: "transparent" }}
+            >
+              <img src={eat}></img>
+            </button>
+            <button
+              className="animate__animated animate__bounce animate__infinite"
+              style={{ backgroundColor: "transparent" }}
+            >
+              <img src={zzz}></img>
+            </button>
+            <button
+              className="animate__animated animate__bounce animate__infinite"
+              style={{ backgroundColor: "transparent" }}
+            >
+              <img src={laptop}></img>
+            </button>
+            <h1>Social Media</h1>
           </div>
 
           <button
@@ -70,18 +79,21 @@ const App = () => {
           >
             <img src={fb}></img>
           </button>
-          <button style={{ backgroundColor: "transparent" }}>
+          <button style={{ backgroundColor: "transparent" }}
+           onClick={() =>
+              window.open("https://www.instagram.com/", "_blank")
+            }>
             <img src={ig}></img>
           </button>
-          <button style={{ backgroundColor: "transparent" }}>
+          <button style={{ backgroundColor: "transparent" }}
+           onClick={() =>
+              window.open("https://x.com/elonmusk", "_blank")
+            }>
             <img src={x}></img>
           </button>
-
-         
         </div>
 
         <div className="right-column-about">
-          
           <div className="card">
             <img src={as} alt="Luffy" className="card-image" />
             Android Studio

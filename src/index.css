@@ -83,6 +83,7 @@ button:focus-visible {
   font-family: "Arial", sans-serif;
   position: relative;
 }
+
 .app-container > div:first-child button {
   font-size: 24px;
   font-weight: bold;
@@ -300,8 +301,7 @@ button:focus-visible {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
-  .left-column,
-  .right-column {
+  .left-column, .right-column {
     padding: 1rem;
   }
 }
@@ -326,8 +326,7 @@ button:focus-visible {
     width: 45px;
     height: 45px;
   }
-  .abt-h1,
-  h1 {
+  .abt-h1, h1 {
     font-size: 20px;
   }
   .container {
